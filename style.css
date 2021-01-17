@@ -1,0 +1,32 @@
+html {
+    font-size: 16px;
+    background-color: navy;
+    color: white;
+}
+/*   fixed image and nav   */
+header {
+    border-bottom: 2px solid gold;
+}
+#reducedImage {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid gold;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer {
+    border-top: 2px solid gold;
+}
+div.cpRight {
+    display: flex;
+    justify-content: flex-end;
+}
+div.social {
+    display: flex;
+    justify-content: space-around;
+}
