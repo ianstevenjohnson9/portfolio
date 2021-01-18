@@ -6,27 +6,53 @@ html {
 /*   fixed image and nav   */
 header {
     border-bottom: 2px solid gold;
+    margin-top: 70px;
 }
 #reducedImage {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     border-radius: 100%;
     border: 2px solid gold;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
 }
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 nav a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     color: white;
+}
+nav a:hover {
+    background-color: gold;
+    color: navy;
+}
+section#welcome {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
 }
 
 footer {
     border-top: 2px solid gold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 div.cpRight {
     display: flex;
     justify-content: flex-end;
+    padding: 20px;
 }
 div.social {
     display: flex;
     justify-content: space-around;
+    font-size: 1.5rem;
 }
