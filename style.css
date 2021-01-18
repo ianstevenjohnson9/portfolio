@@ -1,49 +1,42 @@
 html {
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: navy;
     color: white;
 }
 /*   fixed image and nav   */
 header {
     border-bottom: 2px solid gold;
-    margin-top: 70px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 #reducedImage {
     height: 50px;
     width: 50px;
     border-radius: 100%;
     border: 2px solid gold;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-
+    margin-top: 0.5em;
+    margin-left: 0.5em;
 }
 nav {
-    position: fixed;
-    top: 0;
-    right: 0;
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: 1em;
+    border-bottom: 2px solid gold;
 }
 
 nav a {
     text-decoration: none;
     font-size: 0.8rem;
     color: white;
+    padding: 5px;
 }
 nav a:hover {
     background-color: gold;
     color: navy;
 }
-section#welcome {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    justify-content: center;
-}
-
 footer {
     border-top: 2px solid gold;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 div.cpRight {
@@ -55,11 +48,42 @@ div.social {
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
+    margin-bottom: 1em;
 }
 
+/*   index css   */
+
+section#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    background-color: gold;
+    color: navy;
+    border: 2px solid white;
+    padding: 0.5em;
+}
+section p {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    padding: 1em
+}
 /*   about css   */
 
 div.profilePicture img{
     height: 200px;
     width: 200px;
 }
+
+/*    skills css     */
+
+/*    projects css   */
+
+/*    contact css   */
