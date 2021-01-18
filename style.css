@@ -56,3 +56,10 @@ div.social {
     justify-content: space-around;
     font-size: 1.5rem;
 }
+
+/*   about css   */
+
+div.profilePicture img{
+    height: 200px;
+    width: 200px;
+}
