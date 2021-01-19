@@ -76,10 +76,19 @@ section p {
     padding: 1em
 }
 /*   about css   */
-
-div.profilePicture img{
-    height: 200px;
-    width: 200px;
+div.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.image {
+    display: flex;
+    justify-content: center;
+}
+div img {
+    border-radius: 2em;
+    height: 230px;
+    width: 230x;
 }
 
 /*    skills css     */
