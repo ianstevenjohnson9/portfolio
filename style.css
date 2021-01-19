@@ -115,4 +115,51 @@ li.even {
 
 /*    projects css   */
 
+/* the green van man style*/
+div.theGreenVanMan {
+    display: flex;
+    flex-direction: column; 
+    background-color: forestgreen;    
+}
+div.theGreenVanMan h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+div.theGreenVanMan p {
+    text-align: left;
+    font-size: 1.2rem;
+}
+div.theGreenVanMan h3,
+.theGreenVanMan .techUsed li,
+div.greenView a {
+    color: black;
+    background-color: yellow;
+    border: 0.2em solid black;
+    border-radius: 0.8em;
+    box-shadow: 0.1em 0.1em 0.1em black;
+    margin: 1em;
+    padding: 0.8em;
+}
+.theGreenVanMan .techUsed li {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+div.greenView {
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: center;
+    border-bottom: 0.4em solid white;
+}
+div.greenView a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+div.greenView a:hover {
+    background-color: white;
+    box-shadow: none;
+}
+
+/* the random workout generator */
+
 /*    contact css   */
