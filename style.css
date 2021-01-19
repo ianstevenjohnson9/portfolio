@@ -90,8 +90,28 @@ div img {
     height: 230px;
     width: 230x;
 }
-
 /*    skills css     */
+div.tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+}
+li {
+    border: 0.1em solid gold;
+    box-shadow: 0.05em 0.05em 0.05em gold;
+    padding: 1em;
+    margin: 10px;
+    text-align: center;
+}
+li.odd {
+    color: navy;
+    background-color:white;
+}
+li.even {
+    color: white;
+    background-color: navy;
+}
 
 /*    projects css   */
 
