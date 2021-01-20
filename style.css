@@ -1,28 +1,37 @@
-html {
+* {
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: navy;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: navy;
-    color: white;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 40px 100px auto 60px;
+    grid-template-areas:    "hd hd"
+                            "img nav"
+                            "section section"
+                            "footer footer"
 }
-/*   fixed image and nav   */
 header {
     border-bottom: 2px solid gold;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
+    grid-area: hd;
+    display: flex;
+    align-items: center;
 }
 #reducedImage {
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    border: 2px solid gold;
-    margin-top: 0.5em;
-    margin-left: 0.5em;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid gold;
+    grid-area: img;
 }
 nav {
     display: flex; 
     justify-content: flex-end;
-    margin-top: 1em;
+    align-items: center;
     border-bottom: 2px solid gold;
+    grid-area: nav;
 }
 
 nav a {
@@ -31,13 +40,18 @@ nav a {
     color: white;
     padding: 5px;
 }
-nav a:hover {
+nav a:hover,
+nav a:active {
     background-color: gold;
     color: navy;
+}
+section {
+    grid-area: section;
 }
 footer {
     border-top: 2px solid gold;
     width: 100%;
+    grid-area: footer;
 }
 div.cpRight {
     display: flex;
@@ -47,8 +61,9 @@ div.cpRight {
 div.social {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-size: 1.5rem;
-    margin-bottom: 1em;
+    padding: 1em;
 }
 
 /*   index css   */
