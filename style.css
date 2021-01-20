@@ -12,7 +12,7 @@ body{
     grid-template-areas:    "hd hd"
                             "img nav"
                             "section section"
-                            "footer footer"
+                            "footer footer";
 }
 header {
     border-bottom: 2px solid gold;
