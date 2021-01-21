@@ -19,6 +19,7 @@ header {
     grid-area: hd;
     display: flex;
     align-items: center;
+    padding: 0.8em;
 }
 #reducedImage {
     height: 100%;
@@ -64,6 +65,12 @@ div.social {
     font-size: 1.5rem;
     padding: 1em;
 }
+@media only screen and (min-width: 900px) {
+    nav a {
+        font-size: 2rem;
+    }
+}
+
 
 /*   index css   */
 
@@ -87,7 +94,7 @@ section p {
     display: flex;
     justify-content: flex-start;
     font-size: 1.2rem;
-    padding: 1em
+    padding: 1em;
 }
 /*   about css   */
 div.description {
@@ -107,7 +114,6 @@ div img {
 /*    skills css     */
 div.tech {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     font-size: 1rem;
 }
@@ -115,6 +121,7 @@ li {
     border: 0.1em solid gold;
     box-shadow: 0.05em 0.05em 0.05em gold;
     padding: 1em;
+    width: 14em;
     margin: 10px;
     text-align: center;
 }
@@ -129,6 +136,7 @@ li.even {
 
 /*    projects css   */
 
+
 /* the green van man style*/
 div.theGreenVanMan {
     display: flex;
@@ -140,11 +148,7 @@ div.randomWorkoutSelector h3 {
     font-size: 1.5rem;
     font-weight: 700;
 }
-div.theGreenVanMan p,
-div.randomWorkoutSelector p {
-    text-align: left;
-    font-size: 1.2rem;
-}
+
 div.theGreenVanMan h3,
 .theGreenVanMan .techUsed li,
 div.greenView a {
@@ -154,13 +158,15 @@ div.greenView a {
     border-radius: 0.8em;
     box-shadow: 0.1em 0.1em 0.1em black;
     margin: 1em;
-    padding: 0.8em;
+    padding: 0.4em;
 }
 .theGreenVanMan .techUsed li,
-.randomWorkoutSelctor .techUsed li {
-    font-size: 1.2rem;
+.randomWorkoutSelctor .techUsed li,
+li.fab {
+    font-size: 1.5rem;
     font-weight: 500;
 }
+
 div.greenView,
 div.randomView {
     display: flex;
@@ -204,3 +210,24 @@ div.randomView a:hover {
 }
 
 /*    contact css   */
+
+#contact {
+    text-align: center;
+}
+div.contactMethod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.email,
+.mobile {
+    border: 0.1em solid #ffffff;
+    padding: 3em;
+    color: #ffd700;
+    font-size: 2rem;
+    border-radius: 2em;
+}
+.email h3,
+.mobile h3 {
+    padding: 1em;
+}
