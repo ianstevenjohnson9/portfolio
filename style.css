@@ -11,7 +11,7 @@ body{
     grid-template-rows: 40px 100px auto 60px;
     grid-template-areas:    "hd hd"
                             "img nav"
-                            "section section"
+                            "main main"
                             "footer footer";
 }
 header {
@@ -28,7 +28,7 @@ header {
 }
 nav {
     display: flex; 
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid gold;
     grid-area: nav;
@@ -38,15 +38,14 @@ nav a {
     text-decoration: none;
     font-size: 0.8rem;
     color: white;
-    padding: 10px;
 }
 nav a:hover,
 nav a:active {
     background-color: gold;
     color: navy;
 }
-section {
-    grid-area: section;
+main {
+    grid-area: main;
 }
 footer {
     border-top: 2px solid gold;
